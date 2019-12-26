@@ -15,9 +15,9 @@ class Koneksi //extends PDO
     public function createConnection()
     {
         $this->host = 'localhost';
-        $this->database = 'inventory';
-        $this->user = 'admin';
-        $this->password = 'admin';
+        $this->database = '';
+        $this->user = 'root';
+        $this->password = '';
 
         $conn = new mysqli($this->host, $this->user, $this->password, $this->database);
         return $conn;
