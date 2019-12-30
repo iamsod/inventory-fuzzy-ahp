@@ -82,7 +82,7 @@ if (isset($_POST['search'])) {
 			</div>
 		</div>
 	</div>
-
+	<?php if (isset($_POST['search'])) { ?>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="box box-primary">
@@ -90,7 +90,7 @@ if (isset($_POST['search'])) {
 					<h3 class="box-title">Data Barang</h3>
 				</div>
 				<div class="box-body table-responsive">
-					<table class="table table-striped table-bordered table-hover">
+					<table  class="table table-striped table-bordered table-hover">
 						<thead class="bg-primary">
 							<tr>
 								<th style="width: 10px">#</th>
@@ -140,6 +140,7 @@ if (isset($_POST['search'])) {
 			</div>
 		</div>
 	</div>
+	<?php } ?>
 
 </section>
 <script>
