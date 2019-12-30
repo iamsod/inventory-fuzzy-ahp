@@ -81,7 +81,7 @@ if (isset($_POST['search'])) {
 	</div>
 	</div>
 	</div>
-
+	<?php if (isset($_POST['search'])) { ?>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="box box-primary">
@@ -139,6 +139,7 @@ if (isset($_POST['search'])) {
 			</div>
 		</div>
 	</div>
+	<?php } ?>
 	<div class="modal fade" id="modal-default">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">

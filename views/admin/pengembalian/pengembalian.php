@@ -73,7 +73,7 @@ if ($res->num_rows == 0) {
 			</div>
 		</div>
 	</div>
-
+	<?php if (isset($_POST['search'])) { ?>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="box box-primary">
@@ -124,6 +124,7 @@ if ($res->num_rows == 0) {
 			</div>
 		</div>
 	</div>
+	<?php } ?>
 
 	<div class="modal fade" id="modal-default">
 		<div class="modal-dialog modal-lg">
